@@ -1,42 +1,9 @@
 [
   {
-    "name": "Ladoo",
-    "category": "premium",
-    "price": "86.93",
-    "quantity": 81,
-    "id": null
-  },
-  {
-    "name": "Ladoo",
-    "category": "dry sweet",
-    "price": "59.81",
-    "quantity": 42,
-    "id": null
-  },
-  {
-    "name": "Soan Papdi",
-    "category": "bengali",
-    "id": null
-  },
-  {
-    "name": "Ladoo",
-    "category": "bengali",
-    "price": "17.00",
-    "quantity": 14,
-    "id": null
-  },
-  {
-    "name": "Halwa",
-    "category": "classic",
-    "price": 88,
-    "quantity": 8,
-    "id": null
-  },
-  {
-    "name": "Gulab Jamun",
-    "category": "dry sweet",
-    "price": 13,
+    "name": "Kaju Katli",
+    "category": "candy",
+    "price": 49,
     "quantity": 20,
-    "id": null
+    "id": 1
   }
 ]
