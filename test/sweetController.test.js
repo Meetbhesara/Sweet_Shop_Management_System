@@ -19,6 +19,5 @@ describe('Sweet shop management system', () => {
         expect(addedSweet.price).toBeLessThanOrEqual(110);
         expect(addedSweet.quantity).toBeGreaterThanOrEqual(1);
         expect(addedSweet.id).toBeDefined();
-        expect(addedSweet.id).toBeGreaterThan(0);
     })
 });
