@@ -1,5 +1,3 @@
-const { name } = require("ejs");
-
 function getUserInput()
 {
 
