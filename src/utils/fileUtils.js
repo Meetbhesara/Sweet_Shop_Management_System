@@ -4,7 +4,11 @@ const path = require('path');
 const filePath = path.join(__dirname, '../../data/sweets.json');
 
 function readData() {
-    return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const content= fs.readFileSync(filePath, 'utf-8');
+    if (!content) { 
+        return []; //handle case where file is empty
+    }
+    return JSON.parse(content); // Parse the JSON content
 }
 
 function writeData(data) {
