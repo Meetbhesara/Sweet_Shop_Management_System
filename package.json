@@ -1,0 +1,22 @@
+{
+  "name": "sweet_shop_managemen_system",
+  "version": "1.0.0",
+  "description": "Objective\r Create a simple Sweet Shop Management System following TDD that allows users to\r perform basic operations such as adding sweets, updating sweet details, deleting sweets,\r searching, sorting, and viewing available sweets.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.4"
+  }
+}
