@@ -2,30 +2,40 @@ Objective
 Create a simple Sweet Shop Management System following TDD that allows users to
 perform basic operations such as adding sweets, updating sweet details, deleting sweets,searching, sorting, and viewing available sweets.
 
-## 📁 Folder Structure (Part 1 - Add, View, Delete)
+
+## 📁 Folder Structure (Updated)
 
 Sweet_Shop_Management_System/
 ├── src/
-│ ├── controllers/
-│ │ └── sweetController.js
-│ ├── services/
-│ │ └── sweetService.js
-│ └── utils/
-│ ├── fileUtils.js
-│ └── getUserInput.js
+│   ├── controllers/
+│   │   ├── sweetController.js
+│   │   └── inventory/
+│   │       └── inventoryController.js
+│   ├── services/
+│   │   └── sweetService.js
+│   └── utils/
+│       ├── fileUtils.js
 ├── test/
-│ ├── add/
-│ │ └── addSweet.test.js
-│ ├── view/
-│ │ └── viewSweets.test.js
-│ └── delete/
-│ └── deleteSweet.test.js
+│   ├── add/
+│   │   └── addSweet.test.js
+│   ├── view/
+│   │   └── viewSweets.test.js
+│   ├── delete/
+│   │   └── deleteSweet.test.js
+│   ├── searchAndSort/
+│   │   ├── searchSweets.test.js
+│   │   └── sortSweets.test.js
+│   ├── inventory/
+│   │   └── inventoryController.test.js
+│   └── utils/
+│       └── getUserInput.js
 ├── data/
-│ └── sweets.json
+│   └── sweets.json
 ├── package.json
 └── README.md
 
-## ✅ Features Implemented (Part 1)
+
+## ✅ Features Implemented (Updated)
 
 ### 🟢 Add Sweet
 - Add a new sweet with:
@@ -42,6 +52,39 @@ Sweet_Shop_Management_System/
 - Delete a sweet by its `id`.
 - Error handling if the sweet does not exist.
 
+### 🟢 Search Sweets
+- Search sweets by name or category.
+- Filter sweets by price range.
+
+### 🟢 Sort Sweets
+- Sort sweets by price, name, or category (ascending/descending).
+
+### 🟢 Inventory Management
+- Purchase sweet (decrease quantity, error if not enough stock or invalid quantity).
+- Restock sweet (increase quantity, error if sweet not found or invalid quantity).
+---
+
+## 🚀 How to Install and Run
+
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+2. **Run all tests:**
+   ```sh
+   npx jest
+   ```
+
+3. **Run a specific test file:**
+   ```sh
+   npx jest test/searchAndSort/searchSweets.test.js
+   npx jest test/searchAndSort/sortSweets.test.js
+   npx jest test/inventory/inventoryController.test.js
+   ```
+
+4. **Use the implemented functions/controllers** in your own scripts or extend the CLI as needed.
+
 ---
 
 ## 🧪 Test-Driven Development (TDD)
@@ -49,13 +92,38 @@ Sweet_Shop_Management_System/
 - Tests written using **Jest**.
 - Test files are organized by feature:
 - 
-## 📁 Test Folder Structure (Part 1 - Add, View, Delete)
+
+## 📁 Test Folder Structure (Updated)
 
 test/
 ├── add/
-│ └── addSweet.test.js
+│   └── addSweet.test.js
 ├── view/
-│ └── viewSweets.test.js
-└── delete/
-└── deleteSweet.test.js
+│   └── viewSweets.test.js
+├── delete/
+│   └── deleteSweet.test.js
+├── searchAndSort/
+│   ├── searchSweets.test.js
+│   └── sortSweets.test.js
+└── inventory/
+    └── inventoryController.test.js
+
+---
+
+## 📄 Example Test File Content
+
+### test/searchAndSort/searchSweets.test.js
+```javascript
+// ...your searchSweets.test.js code here...
+```
+
+### test/searchAndSort/sortSweets.test.js
+```javascript
+// ...your sortSweets.test.js code here...
+```
+
+### test/inventory/inventoryController.test.js
+```javascript
+// ...your inventoryController.test.js code here...
+```
 
