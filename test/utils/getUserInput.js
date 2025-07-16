@@ -13,12 +13,16 @@ function getUserInput()
     "pastry", "chocolate", "candy", "dry sweet", "milk sweet",
     "festival special", "seasonal", "bengali", "classic", "premium"
   ];
+    const price = Number(Math.floor(Math.random() * 100) + 10);     // Ensured number
+  const quantity = Number(Math.floor(Math.random() * 20) + 1);    //  Ensured number
+ // Random quantity between 1 and 100
 
   return  {
     name: names[Math.floor(Math.random() * names.length)],
-    category: categories[Math.floor(Math.random() * categories.length)],        
-    price: (Math.random() * 100 + 10).toFixed(2), // Random price between 10 and 110
-    quantity: Math.floor(Math.random() * 100) + 1, // Random quantity
+    category: categories[Math.floor(Math.random() * categories.length)],  
+    price,
+    quantity      
+    
   }
 }
 

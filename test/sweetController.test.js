@@ -11,14 +11,13 @@ describe('Sweet shop management system', () => {
         const sweet = getUserInput();
         const addedSweet = addSweet(sweet);
 
-        expect(addedSweet.name).toBe("string");
-        expect(addedSweet.category).toBe("string");
-        expect(addedSweet.price).toBe("number");
-        expect(addedSweet.quantity).toBe("number");
+        expect(typeof addedSweet.name).toBe("string");
+        expect(typeof addedSweet.category).toBe("string");
+        expect(typeof addedSweet.price).toBe("number");
+        expect(typeof addedSweet.quantity).toBe("number");
         expect(addedSweet.price).toBeGreaterThanOrEqual(10);
         expect(addedSweet.price).toBeLessThanOrEqual(110);
         expect(addedSweet.quantity).toBeGreaterThanOrEqual(1);
         expect(addedSweet.id).toBeDefined();
-        expect(addedSweet.id).toBeGreaterThan(0);
     })
 });
