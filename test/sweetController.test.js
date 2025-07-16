@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');   
 const {getUserInput} = require('./utils/getUserInput');
 
-const {addSweet , viewAllSweets } = require('../src/controllers/sweetController');   
+const {addSweet , viewAllSweets ,deleteSweetById } = require('../src/controllers/sweetController');   
 const e = require('express');
 
 const filePath = path.join(__dirname, '../data/sweets.json');
