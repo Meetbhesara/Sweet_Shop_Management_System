@@ -1,9 +1,23 @@
 [
   {
-    "name": "Kaju Katli",
-    "category": "candy",
-    "price": 49,
-    "quantity": 20,
-    "id": 1
+    "name": "Barfi",
+    "category": "seasonal",
+    "price": 61,
+    "quantity": 15,
+    "id": 2
+  },
+  {
+    "name": "Cham Cham",
+    "category": "dry sweet",
+    "price": 53,
+    "quantity": 3,
+    "id": 3
+  },
+  {
+    "name": "Peda",
+    "category": "pastry",
+    "price": 46,
+    "quantity": 13,
+    "id": 4
   }
 ]
